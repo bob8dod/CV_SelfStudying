@@ -6,7 +6,7 @@ from core.config import cfg
 import colorsys
 import random
 
-MODEL_PATH = './checkpoints/yolov4-416'
+MODEL_PATH = './yolov4-416'
 IOU_THRESHOLD = 0.45
 SCORE_THRESHOLD = 0.25
 INPUT_SIZE = 416
@@ -103,5 +103,5 @@ def main(video_path):
             break
 
 if __name__ == '__main__':
-    video_path = './data/road.mp4'
+    video_path = './road.mp4'
     main(video_path)
